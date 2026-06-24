@@ -11,12 +11,13 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 body {
   font-family: var(--sans);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
@@ -111,6 +112,7 @@ h1, h2, h3 { font-family: var(--serif); color: var(--dark); font-weight: 600; li
   justify-content: center;
   color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 .hero-bg {
   position: absolute; inset: 0;
@@ -126,7 +128,7 @@ h1, h2, h3 { font-family: var(--serif); color: var(--dark); font-weight: 600; li
 .hero-sub { font-size: 17px; margin-bottom: 32px; color: #f1f1f1; }
 
 /* ===== About ===== */
-.about { padding: 110px 0 90px; background: #fff; }
+.about { padding: 110px 0 90px; background: #fff; overflow-x: hidden; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .about-images { position: relative; padding-bottom: 40px; }
 .about-images img { border-radius: 4px; }
@@ -179,7 +181,7 @@ h1, h2, h3 { font-family: var(--serif); color: var(--dark); font-weight: 600; li
 .price-note { text-align: center; margin-top: 36px; font-size: 13px; color: var(--muted); }
 
 /* ===== Menu ===== */
-.menu { padding: 100px 0; background: var(--cream); }
+.menu { padding: 100px 0; background: var(--cream); overflow-x: hidden; }
 .menu h2 { font-size: 36px; margin-bottom: 50px; }
 .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
 .menu-image img { border-radius: 6px; height: 100%; object-fit: cover; }
@@ -225,7 +227,7 @@ h1, h2, h3 { font-family: var(--serif); color: var(--dark); font-weight: 600; li
 .testimonial-nav button:hover { background: var(--dark); color: #fff; }
 
 /* ===== Contact ===== */
-.contact { padding: 100px 0; background: #fff; }
+.contact { padding: 100px 0; background: #fff; overflow-x: hidden; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
 .contact-text h2 { font-size: 32px; margin-bottom: 26px; }
 .contact-details { margin-bottom: 26px; }
